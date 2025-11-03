@@ -8,6 +8,8 @@ services:
     startCommand: gunicorn app:app -w 2 -k gthread --threads 4 --timeout 120 --bind 0.0.0.0:$PORT
     autoDeploy: true
     envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
       - key: GOOGLE_MAPS_API_KEY
         sync: false
 
