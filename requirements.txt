@@ -1,6 +1,8 @@
 flask==2.3.3
 flask-cors==4.0.0
 requests==2.31.0
+# Pin numpy below 2.0 to match pandas 2.0.3 binary wheels
+numpy==1.26.4
 pandas==2.0.3
 python-dotenv==1.0.0
 gunicorn==21.2.0
