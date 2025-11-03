@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyderabad Metro Journey Planner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #9C27B0 0%, #673AB7 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #9C27B0 0%, #673AB7 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .input-section {
+            padding: 40px;
+            background: #f8f9fa;
+        }
+
+        .input-group {
+            margin-bottom: 30px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e1e5e9;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #9C27B0;
+            box-shadow: 0 0 0 3px rgba(156, 39, 176, 0.1);
+        }
+
+        .find-button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #9C27B0 0%, #673AB7 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .find-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .find-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            color: #9C27B0;
+            font-size: 1.1rem;
+        }
+
+        .results-section {
+            padding: 40px;
+            display: none;
+        }
+
+        .direct-taxi-suggestion {
+            background: linear-gradient(135deg, #FF9800 0%, #F57C00 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .direct-taxi-suggestion h3 {
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .direct-taxi-suggestion p {
+            margin-bottom: 5px;
+        }
+
+        .direct-taxi-suggestion .reasons {
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        .direct-taxi-suggestion .reasons ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .direct-taxi-suggestion .reasons li {
+            margin-bottom: 5px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .direct-taxi-suggestion .reasons li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        .route-card {
+            background: white;
+            border: 2px solid #e1e5e9;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .route-card:hover {
+            border-color: #9C27B0;
+            box-shadow: 0 8px 25px rgba(156, 39, 176, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .route-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .route-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .convenience-score {
+            background: linear-gradient(135deg, #9C27B0 0%, #673AB7 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .route-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .detail-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .detail-item .label {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .detail-item .value {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .route-breakdown {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .route-breakdown h4 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .leg-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #e1e5e9;
+        }
+
+        .leg-item:last-child {
+            border-bottom: none;
+        }
+
+        .leg-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .leg-icon {
+            font-size: 1.2rem;
+        }
+
+        .leg-details {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .leg-time {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .metro-info {
+            background: linear-gradient(135deg, #9C27B0 0%, #673AB7 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .metro-info h4 {
+            margin-bottom: 10px;
+        }
+
+        .route-type {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            line-height: 1.4;
+        }
+
+        .route-type span {
+            padding: 2px 6px;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid currentColor;
+            font-weight: bold;
+        }
+
+        .recommended-badge {
+            background: linear-gradient(135deg, #ffd700, #ffed4e);
+            color: #333;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px 0;
+            box-shadow: 0 2px 4px rgba(255, 215, 0, 0.3);
+        }
+
+        .recommendation-reasons {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            border-left: 4px solid #007bff;
+        }
+
+        .recommendation-reasons h4 {
+            margin: 0 0 10px 0;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .recommendation-reasons ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .recommendation-reasons li {
+            margin-bottom: 5px;
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        .direct-taxi-card {
+            border: 2px solid #ffc107;
+            background: linear-gradient(135deg, #fff3cd, #ffffff);
+        }
+
+        .error-message {
+            background: #f44336;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .no-routes {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+
+        .no-routes h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                border-radius: 10px;
+            }
+
+            .header {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .input-section,
+            .results-section {
+                padding: 20px;
+            }
+
+            .route-details {
+                grid-template-columns: 1fr;
+            }
+
+            .route-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚇 Hyderabad Metro Journey Planner</h1>
+            <p>Find the smartest way to travel using taxi + metro combinations</p>
+        </div>
+
+        <div class="input-section">
+            <div class="input-group">
+                <label for="initial-address">📍 Starting Point</label>
+                <input type="text" id="initial-address" placeholder="Enter your starting address">
+            </div>
+
+            <div class="input-group">
+                <label for="dest-address">🎯 Destination</label>
+                <input type="text" id="dest-address" placeholder="Enter your destination address">
+            </div>
+
+            <button class="find-button" onclick="findRoutes()">
+                🔍 Find Best Routes
+            </button>
+        </div>
+
+        <div class="loading" id="loading">
+            🔍 Finding the best routes for you...
+        </div>
+
+        <div class="results-section" id="results-section">
+            <div id="direct-taxi-suggestion"></div>
+            <div id="routes-container"></div>
+        </div>
+    </div>
+
+    <script>
+        let initialAutocomplete;
+        let destAutocomplete;
+
+        function initAutocomplete() {
+            console.log('Initializing Google Places Autocomplete...');
+
+            const initialInput = document.getElementById('initial-address');
+            const destInput = document.getElementById('dest-address');
+
+            initialAutocomplete = new google.maps.places.Autocomplete(initialInput, {
+                types: ['establishment', 'geocode'],
+                componentRestrictions: { country: 'in' },
+                fields: ['place_id', 'geometry', 'name', 'formatted_address']
+            });
+
+            destAutocomplete = new google.maps.places.Autocomplete(destInput, {
+                types: ['establishment', 'geocode'],
+                componentRestrictions: { country: 'in' },
+                fields: ['place_id', 'geometry', 'name', 'formatted_address']
+            });
+
+            console.log('Google Places Autocomplete initialized successfully');
+        }
+
+        async function findRoutes() {
+            const initialAddress = document.getElementById('initial-address').value;
+            const destAddress = document.getElementById('dest-address').value;
+
+            if (!initialAddress || !destAddress) {
+                alert('Please enter both starting point and destination');
+                return;
+            }
+
+            // Show loading
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('results-section').style.display = 'none';
+            document.querySelector('.find-button').disabled = true;
+
+            try {
+                // Get coordinates from autocomplete
+                const initialPlace = initialAutocomplete.getPlace();
+                const destPlace = destAutocomplete.getPlace();
+
+                if (!initialPlace.geometry || !destPlace.geometry) {
+                    throw new Error('Please select addresses from the dropdown suggestions');
+                }
+
+                const initialLat = initialPlace.geometry.location.lat();
+                const initialLng = initialPlace.geometry.location.lng();
+                const destLat = destPlace.geometry.location.lat();
+                const destLng = destPlace.geometry.location.lng();
+
+                // Send request to backend
+                const response = await fetch('/find_routes', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        initial_lat: initialLat,
+                        initial_lng: initialLng,
+                        dest_lat: destLat,
+                        dest_lng: destLng,
+                        initial_address: initialAddress,
+                        dest_address: destAddress
+                    })
+                });
+
+                const data = await response.json();
+
+                if (data.status === 'success') {
+                    displayResults(data);
+                } else {
+                    throw new Error(data.error || 'Failed to find routes');
+                }
+
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('results-section').innerHTML = `
+                    <div class="error-message">
+                        ❌ Error: ${error.message}
+                    </div>
+                `;
+                document.getElementById('results-section').style.display = 'block';
+            } finally {
+                document.getElementById('loading').style.display = 'none';
+                document.querySelector('.find-button').disabled = false;
+            }
+        }
+
+        function displayResults(data) {
+            const resultsSection = document.getElementById('results-section');
+            const routesContainer = document.getElementById('routes-container');
+            const directTaxiContainer = document.getElementById('direct-taxi-suggestion');
+
+            // Clear previous results
+            routesContainer.innerHTML = '';
+            directTaxiContainer.innerHTML = '';
+
+            // Clear containers
+            directTaxiContainer.innerHTML = '';
+            routesContainer.innerHTML = '';
+
+            // Display recommended route first
+            if (data.recommended_type === 'direct_taxi' && data.recommended_route) {
+                // Show direct taxi as recommended
+                const directTaxiCard = createDirectTaxiCard(data.recommended_route, true, data.recommendation_reasons || []);
+                directTaxiContainer.appendChild(directTaxiCard);
+
+                // Show metro routes below
+                if (data.convenience_routes && data.convenience_routes.length > 0) {
+                    data.convenience_routes.forEach((route, index) => {
+                        const routeCard = createRouteCard(route, index + 1, false);
+                        routesContainer.appendChild(routeCard);
+                    });
+                }
+            } else if (data.recommended_type === 'metro' && data.recommended_route) {
+                // Show metro route as recommended
+                const recommendedCard = createRouteCard(data.recommended_route, 1, true, data.recommendation_reasons || []);
+                routesContainer.appendChild(recommendedCard);
+
+                // Show remaining metro routes
+                if (data.convenience_routes && data.convenience_routes.length > 1) {
+                    data.convenience_routes.slice(1).forEach((route, index) => {
+                        const routeCard = createRouteCard(route, index + 2, false);
+                        routesContainer.appendChild(routeCard);
+                    });
+                }
+
+                // Show direct taxi below (if available)
+                if (data.direct_taxi_suggestion && data.direct_taxi_suggestion.direct_distance) {
+                    const directTaxiCard = createDirectTaxiCard(data.direct_taxi_suggestion, false);
+                    directTaxiContainer.appendChild(directTaxiCard);
+                }
+            } else {
+                // Fallback - no recommendation
+                routesContainer.innerHTML = `
+                    <div class="no-routes">
+                        <h3>No routes found</h3>
+                        <p>We couldn't find any suitable routes for your journey.</p>
+                    </div>
+                `;
+            }
+
+            resultsSection.style.display = 'block';
+        }
+
+        function createRouteCard(route, rank, isRecommended = false, reasons = []) {
+            const card = document.createElement('div');
+            card.className = 'route-card';
+
+            const leg1Icon = route.leg1_mode === 'walking' ? '🚶' : '🚗';
+            const leg2Icon = route.leg2_mode === 'walking' ? '🚶' : '🚗';
+
+            let routeTypeText = '';
+            let routeTypeHTML = '';
+            if (route.same_line) {
+                routeTypeText = `Same Line (${route.initial_line})`;
+                routeTypeHTML = `Same Line<br>
+                    <span style="color: ${route.initial_line_color}; font-weight: bold;">${route.initial_line}</span>`;
+            } else if (route.transfer_count === 1) {
+                routeTypeText = `Single Transfer: ${route.interchange}`;
+                routeTypeHTML = `Single Transfer at <strong>${route.interchange}</strong><br>
+                    <span style="color: ${route.initial_line_color}; font-weight: bold;">${route.initial_line}</span> → 
+                    <span style="color: ${route.dest_line_color}; font-weight: bold;">${route.dest_line}</span>`;
+            } else {
+                routeTypeText = `Different Lines (${route.initial_line} → ${route.dest_line})`;
+                routeTypeHTML = `Different Lines<br>
+                    <span style="color: ${route.initial_line_color}; font-weight: bold;">${route.initial_line}</span> → 
+                    <span style="color: ${route.dest_line_color}; font-weight: bold;">${route.dest_line}</span>`;
+            }
+
+            const recommendedBadge = isRecommended ? '<div class="recommended-badge">🏆 RECOMMENDED</div>' : '';
+
+            card.innerHTML = `
+                <div class="route-header">
+                    <div class="route-title">Route ${rank}: ${route.initial} → ${route.destination}</div>
+                    <div class="convenience-score">Score: ${route.total_convenience_score.toFixed(1)}</div>
+                </div>
+                ${recommendedBadge}
+
+                <div class="route-details">
+                    <div class="detail-item">
+                        <div class="label">Total Time</div>
+                        <div class="value">${route.total_journey_time.toFixed(1)} min</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="label">Access Distance</div>
+                        <div class="value">${route.total_access_distance.toFixed(1)} km</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="label">Metro Distance</div>
+                        <div class="value">${route.metro_distance.toFixed(1)} km</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="label">Transfers</div>
+                        <div class="value">${route.transfer_count}</div>
+                    </div>
+                </div>
+
+                <div class="route-breakdown">
+                    <h4>Route Breakdown</h4>
+                    <div class="leg-item">
+                        <div class="leg-info">
+                            <span class="leg-icon">${leg1Icon}</span>
+                            <div class="leg-details">
+                                <strong>${route.initial}</strong><br>
+                                ${route.leg1_distance.toFixed(1)} km ${route.leg1_mode}
+                            </div>
+                        </div>
+                        <div class="leg-time">${route.leg1_time}</div>
+                    </div>
+
+                    <div class="metro-info">
+                        <h4>🚇 Metro Journey</h4>
+                        <div>${route.metro_distance.toFixed(1)} km • ${route.metro_time.toFixed(0)} min</div>
+                        <div class="route-type">${routeTypeHTML}</div>
+                    </div>
+
+                    <div class="leg-item">
+                        <div class="leg-info">
+                            <span class="leg-icon">${leg2Icon}</span>
+                            <div class="leg-details">
+                                <strong>${route.destination}</strong><br>
+                                ${route.leg2_distance.toFixed(1)} km ${route.leg2_mode}
+                            </div>
+                        </div>
+                        <div class="leg-time">${route.leg2_time}</div>
+                    </div>
+                </div>
+                ${isRecommended && reasons.length > 0 ? `
+                    <div class="recommendation-reasons">
+                        <h4>💡 Why we recommend this:</h4>
+                        <ul>
+                            ${reasons.map(reason => `<li>${reason}</li>`).join('')}
+                        </ul>
+                    </div>
+                ` : ''}
+            `;
+
+            return card;
+        }
+
+        function createDirectTaxiCard(directTaxi, isRecommended = false, reasons = []) {
+            const card = document.createElement('div');
+            card.className = 'route-card direct-taxi-card';
+
+            const recommendedBadge = isRecommended ? '<div class="recommended-badge">🏆 RECOMMENDED</div>' : '';
+
+            // Safe property access with fallbacks
+            const durationMin = directTaxi?.duration_min || 0;
+            const durationSec = directTaxi?.duration_sec || 0;
+            const distanceKm = directTaxi?.distance_km || 0;
+            const timeDisplay = directTaxi?.time_display || '0 min';
+
+            card.innerHTML = `
+                <div class="route-header">
+                    <div class="route-title">🚕 Direct Taxi Route</div>
+                    <div class="convenience-score">Direct Route</div>
+                </div>
+                ${recommendedBadge}
+
+                <div class="route-details">
+                    <div class="detail-item">
+                        <div class="label">Total Time</div>
+                        <div class="value">${durationMin} min ${durationSec} sec</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="label">Distance</div>
+                        <div class="value">${distanceKm.toFixed(1)} km</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="label">Mode</div>
+                        <div class="value">Taxi Only</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="label">Transfers</div>
+                        <div class="value">0</div>
+                    </div>
+                </div>
+
+                <div class="route-breakdown">
+                    <h4>Route Breakdown</h4>
+                    <div class="leg-item">
+                        <div class="leg-info">
+                            <span class="leg-icon">🚕</span>
+                            <div class="leg-details">
+                                <strong>Direct Route</strong><br>
+                                ${distanceKm.toFixed(1)} km taxi
+                            </div>
+                        </div>
+                        <div class="leg-time">${timeDisplay}</div>
+                    </div>
+                </div>
+                ${isRecommended && reasons && reasons.length > 0 ? `
+                    <div class="recommendation-reasons">
+                        <h4>💡 Why we recommend this:</h4>
+                        <ul>
+                            ${reasons.map(reason => `<li>${reason}</li>`).join('')}
+                        </ul>
+                    </div>
+                ` : ''}
+            `;
+
+            return card;
+        }
+    </script>
+
+    <script>
+        // Load Google Maps API
+        function loadGoogleMapsAPI() {
+            const apiKey = '{{ api_key }}';
+
+            if (!apiKey || apiKey === 'your_api_key_here' || apiKey === 'None') {
+                console.error('No Google Maps API key provided');
+                document.getElementById('loading').innerHTML = `
+                    <div class="error-message">
+                        ❌ Google Maps API key not configured. Please add your API key to the .env file.
+                    </div>
+                `;
+                return;
+            }
+
+            const script = document.createElement('script');
+            script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places&callback=initAutocomplete`;
+            script.async = true;
+            script.defer = true;
+            script.onerror = () => {
+                console.error('Failed to load Google Maps API');
+                document.getElementById('loading').innerHTML = `
+                    <div class="error-message">
+                        ❌ Failed to load Google Maps API. Please check your internet connection.
+                    </div>
+                `;
+            };
+            document.head.appendChild(script);
+        }
+
+        // Load API when page loads
+        document.addEventListener('DOMContentLoaded', loadGoogleMapsAPI);
+    </script>
+</body>
+
+</html>

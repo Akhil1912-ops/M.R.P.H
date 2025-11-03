@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Envs
+.env
+.venv/
+venv/
+
+# OS
+.DS_Store
+
+# Notebooks
+.ipynb_checkpoints/
+
