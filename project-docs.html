@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyderabad Metro Journey Planner — Project Overview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #fff;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            font-size: 0.95rem;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .tech-tag {
+            background: #f0f0f0;
+            padding: 6px 12px;
+            font-size: 0.85rem;
+            border-radius: 4px;
+        }
+
+        .tech-intro {
+            margin-bottom: 12px;
+        }
+
+        .section {
+            border-top: 1px solid #eee;
+            padding-top: 24px;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background: #eee;
+            margin: 32px 0;
+        }
+
+        .flow-step {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .flow-num {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            background: #ddd;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .flow-text {
+            flex: 1;
+        }
+
+        code {
+            background: #f5f5f5;
+            padding: 2px 6px;
+            font-size: 0.9em;
+            border-radius: 3px;
+        }
+
+        .note {
+            background: #f9f9f9;
+            padding: 16px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hyderabad Metro Journey Planner</h1>
+        <p class="subtitle">Multimodal route comparison — Taxi vs Taxi + Metro</p>
+
+        <div class="section">
+            <h2>What it does</h2>
+            <p>
+                Ever wondered whether to book a cab straight to your destination or take a taxi to the metro, ride the metro, then taxi again? This webpage answers that.
+            </p>
+            <p>
+                You enter your starting address and destination. The webpage compares <strong>direct taxi</strong> (door-to-door) with <strong>taxi + metro</strong> routes. It weighs travel time, distance, and how many metro transfers you’d need, then recommends the better option — with reasons.
+            </p>
+            <p>
+                Built for Hyderabad’s metro network, using real-time traffic data and official metro schedules.
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="section">
+            <h2>How it works</h2>
+            <div class="flow-step">
+                <span class="flow-num">1</span>
+                <div class="flow-text">
+                    <strong>Find nearby stations.</strong> It selects the 7 closest metro stations to your start and the 7 closest to your destination. More options help find the best route, not just the nearest station.
+                </div>
+            </div>
+            <div class="flow-step">
+                <span class="flow-num">2</span>
+                <div class="flow-text">
+                    <strong>First mile & last mile.</strong> For each station, it figures out how you reach it — walk (if within 500m) or taxi. Same for the other end: from the arrival station to your destination. Times come from Google Directions, including traffic.
+                </div>
+            </div>
+            <div class="flow-step">
+                <span class="flow-num">3</span>
+                <div class="flow-text">
+                    <strong>Build route combinations.</strong> It pairs every “from” station with every “to” station (7×7 = 49 combinations), adds metro travel time from a precomputed dataset, and works out total journey time for each.
+                </div>
+            </div>
+            <div class="flow-step">
+                <span class="flow-num">4</span>
+                <div class="flow-text">
+                    <strong>Score & rank.</strong> Each route gets a convenience score from access distance (how far to/from stations), number of metro transfers, and metro segment length. Routes are sorted by this score.
+                </div>
+            </div>
+            <div class="flow-step">
+                <span class="flow-num">5</span>
+                <div class="flow-text">
+                    <strong>Direct taxi check.</strong> Six rules decide when direct taxi wins: e.g. short distance, metro not saving enough time, or first/last mile too long. If any rule passes, direct taxi is recommended.
+                </div>
+            </div>
+            <div class="flow-step">
+                <span class="flow-num">6</span>
+                <div class="flow-text">
+                    <strong>Return results.</strong> You get the top 5 taxi+metro routes plus the direct taxi option, with one highlighted as the recommendation.
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="section">
+            <h2>Tech stack</h2>
+            <p class="tech-intro">Backend, APIs, and deployment:</p>
+            <div class="tech-list">
+                <span class="tech-tag">Python 3.11</span>
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Requests</span>
+                <span class="tech-tag">Google Maps API</span>
+                <span class="tech-tag">Places Autocomplete</span>
+                <span class="tech-tag">Directions API</span>
+                <span class="tech-tag">Gunicorn</span>
+                <span class="tech-tag">Render</span>
+            </div>
+            <p>Uses the Requests library to call Google Directions (taxi times with traffic) and Places Autocomplete for address search. Metro travel times are precomputed and stored in a CSV.</p>
+        </div>
+
+        <hr>
+
+        <div class="section">
+            <h2>Project structure</h2>
+            <ul>
+                <li><code>app.py</code> — Flask app; serves the main page and the route-finding API</li>
+                <li><code>station_finder.py</code> — Core engine: finds nearest stations, computes taxi/walk legs, scores routes, decides when to recommend direct taxi</li>
+                <li><code>hyderabad_metro_stations.py</code> — Metro data: Red/Blue/Green lines, 56 stations with coordinates, interchange info</li>
+                <li><code>station_pairs_with_times.csv</code> — Precomputed metro travel times between station pairs (~3,000+ routes)</li>
+                <li><code>templates/index.html</code> — Web UI: address inputs with autocomplete, route cards, recommendation display</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="section">
+            <h2>When direct taxi wins</h2>
+            <p>The app suggests a direct taxi (instead of metro) when at least one of these is true:</p>
+            <ul>
+                <li>Door-to-door distance is 7 km or less</li>
+                <li>Taxi+metro takes at least 1.5× longer than direct taxi</li>
+                <li>Direct taxi saves you 20+ minutes compared to metro</li>
+                <li>First mile + last mile add up to 80% or more of the direct distance</li>
+                <li>Either first or last mile alone is 70%+ of the direct distance</li>
+                <li>You need 2+ metro transfers and taxi+metro is still 1.3× slower than direct taxi</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="section">
+            <h2>Metro data</h2>
+            <p>
+                Uses official Hyderabad Metro data: Red, Blue, and Green lines; 56 stations; 3 interchange stations (Ameerpet, JBS Parade Ground, Mahatma Gandhi Bus Station). Metro travel times between station pairs are loaded from <code>station_pairs_with_times.csv</code>, so the app doesn’t have to compute them on every request.
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="section">
+            <p class="note">
+                <strong>Live app:</strong> <a href="https://m-r-p-h.onrender.com/" target="_blank">https://m-r-p-h.onrender.com/</a><br>
+                <em>Note: It may take a minute to load on first visit.</em>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

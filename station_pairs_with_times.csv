@@ -1,6 +1,6 @@
 start_station,end_station,directions_time_min,start_lat,start_lng,end_lat,end_lng,same_line,interchange_station,metro_distance_km
 Ameerpet,Assembly,10,17.435697,78.444603,17.39813,78.470786,True,,5.31
-Ameerpet,Dr. B. R. Ambedkar Balanagar,10,17.435697,78.444603,17.477586,78.42099,True,,5.64
+Ameerpet,Balanagar,10,17.435697,78.444603,17.477586,78.42099,True,,5.64
 Ameerpet,Begumpet,3,17.435697,78.444603,17.437583,78.456945,True,,1.57
 Ameerpet,Bharat Nagar,7,17.435697,78.444603,17.464046,78.430048,True,,3.51
 Ameerpet,Chaitanyapuri,25,17.435697,78.444603,17.368398,78.535855,True,,13.96
@@ -55,7 +55,7 @@ Ameerpet,Uppal,25,17.435697,78.444603,17.400078,78.560251,True,,16.06
 Ameerpet,Victoria Memorial,27,17.435697,78.444603,17.361889,78.543962,True,,15.19
 Ameerpet,Yousufguda,5,17.435697,78.444603,17.435081,78.427292,True,,1.8
 Assembly,Ameerpet,10,17.39813,78.470786,17.435697,78.444603,True,,5.31
-Assembly,Dr. B. R. Ambedkar Balanagar,20,17.39813,78.470786,17.477586,78.42099,True,,10.95
+Assembly,Balanagar,20,17.39813,78.470786,17.477586,78.42099,True,,10.95
 Assembly,Begumpet,18,17.39813,78.470786,17.437583,78.456945,False,Ameerpet,6.88
 Assembly,Bharat Nagar,17,17.39813,78.470786,17.464046,78.430048,True,,8.82
 Assembly,Chaitanyapuri,15,17.39813,78.470786,17.368398,78.535855,True,,8.65
@@ -109,64 +109,64 @@ Assembly,Tarnaka,33,17.39813,78.470786,17.428297,78.52856,False,Ameerpet,16.36
 Assembly,Uppal,40,17.39813,78.470786,17.400078,78.560251,False,Ameerpet,21.37
 Assembly,Victoria Memorial,17,17.39813,78.470786,17.361889,78.543962,True,,9.88
 Assembly,Yousufguda,20,17.39813,78.470786,17.435081,78.427292,False,Ameerpet,7.11
-Dr. B. R. Ambedkar Balanagar,Ameerpet,10,17.477586,78.42099,17.435697,78.444603,True,,5.64
-Dr. B. R. Ambedkar Balanagar,Assembly,20,17.477586,78.42099,17.39813,78.470786,True,,10.95
-Dr. B. R. Ambedkar Balanagar,Begumpet,18,17.477586,78.42099,17.437583,78.456945,False,Ameerpet,7.21
-Dr. B. R. Ambedkar Balanagar,Bharat Nagar,3,17.477586,78.42099,17.464046,78.430048,True,,2.13
-Dr. B. R. Ambedkar Balanagar,Chaitanyapuri,35,17.477586,78.42099,17.368398,78.535855,True,,19.6
-Dr. B. R. Ambedkar Balanagar,Chikkadpally,37,17.477586,78.42099,17.400805,78.494876,False,Mahatma Gandhi Bus Station,16.98
-Dr. B. R. Ambedkar Balanagar,Dilsukhnagar,34,17.477586,78.42099,17.368594,78.525728,True,,18.52
-Dr. B. R. Ambedkar Balanagar,Durgam Cheruvu,31,17.477586,78.42099,17.442854,78.387646,False,Ameerpet,13.27
-Dr. B. R. Ambedkar Balanagar,ESI Hospital,6,17.477586,78.42099,17.447377,78.438352,True,,4.18
-Dr. B. R. Ambedkar Balanagar,Erragadda,5,17.477586,78.42099,17.457235,78.433531,True,,2.97
-Dr. B. R. Ambedkar Balanagar,Gandhi Bhavan,23,17.477586,78.42099,17.38609,78.473099,True,,12.39
-Dr. B. R. Ambedkar Balanagar,Gandhi Hospital,41,17.477586,78.42099,17.425639,78.501872,False,Mahatma Gandhi Bus Station,19.88
-Dr. B. R. Ambedkar Balanagar,HITEC City,32,17.477586,78.42099,17.449025,78.383239,False,Ameerpet,14.1
-Dr. B. R. Ambedkar Balanagar,Habsiguda,35,17.477586,78.42099,17.420218,78.540538,False,Ameerpet,18.29
-Dr. B. R. Ambedkar Balanagar,Irrum Manzil,13,17.477586,78.42099,17.42036,78.456186,True,,7.72
-Dr. B. R. Ambedkar Balanagar,JBS Parade Ground,46,17.477586,78.42099,17.444472,78.497483,False,Ameerpet,22.44
-Dr. B. R. Ambedkar Balanagar,JNTU College,6,17.477586,78.42099,17.498679,78.389015,True,,3.95
-Dr. B. R. Ambedkar Balanagar,Jubilee Hills Check Post,24,17.477586,78.42099,17.42834,78.413688,False,Ameerpet,9.54
-Dr. B. R. Ambedkar Balanagar,KPHB Colony,4,17.477586,78.42099,17.493796,78.401668,True,,2.46
-Dr. B. R. Ambedkar Balanagar,Khairatabad,16,17.477586,78.42099,17.411614,78.460844,True,,8.85
-Dr. B. R. Ambedkar Balanagar,Kukatpally,2,17.477586,78.42099,17.485121,78.411553,True,,1.0
-Dr. B. R. Ambedkar Balanagar,LB Nagar,39,17.477586,78.42099,17.349724,78.547972,True,,22.26
-Dr. B. R. Ambedkar Balanagar,Lakdi Ka Pul,18,17.477586,78.42099,17.403687,78.464591,True,,9.95
-Dr. B. R. Ambedkar Balanagar,Madhapur,28,17.477586,78.42099,17.436879,78.400681,False,Ameerpet,11.38
-Dr. B. R. Ambedkar Balanagar,Madhura Nagar,17,17.477586,78.42099,17.437715,78.44055,False,Ameerpet,6.34
-Dr. B. R. Ambedkar Balanagar,Mahatma Gandhi Bus Station,26,17.477586,78.42099,17.379856,78.485961,True,,14.0
-Dr. B. R. Ambedkar Balanagar,Malakpet,28,17.477586,78.42099,17.377292,78.493831,True,,14.91
-Dr. B. R. Ambedkar Balanagar,Mettuguda,31,17.477586,78.42099,17.435572,78.5196,False,Ameerpet,15.44
-Dr. B. R. Ambedkar Balanagar,Miyapur,8,17.477586,78.42099,17.4964542,78.3729359,True,,5.7
-Dr. B. R. Ambedkar Balanagar,Moosapet,2,17.477586,78.42099,17.472162,78.425925,True,,1.13
-Dr. B. R. Ambedkar Balanagar,Musarambagh,31,17.477586,78.42099,17.371136,78.511946,True,,17.01
-Dr. B. R. Ambedkar Balanagar,Musheerabad,40,17.477586,78.42099,17.418808,78.499823,False,Mahatma Gandhi Bus Station,18.99
-Dr. B. R. Ambedkar Balanagar,Ngri,37,17.477586,78.42099,17.414859,78.546309,False,Ameerpet,19.44
-Dr. B. R. Ambedkar Balanagar,Nagole,42,17.477586,78.42099,17.39051,78.558659,False,Ameerpet,22.73
-Dr. B. R. Ambedkar Balanagar,Nampally,21,17.477586,78.42099,17.392352,78.470132,True,,11.61
-Dr. B. R. Ambedkar Balanagar,Narayanguda,35,17.477586,78.42099,17.394383,78.489863,False,Mahatma Gandhi Bus Station,16.05
-Dr. B. R. Ambedkar Balanagar,New Market,30,17.477586,78.42099,17.373486,78.502903,True,,16.02
-Dr. B. R. Ambedkar Balanagar,Osmania Medical College,24,17.477586,78.42099,17.382358,78.481073,True,,13.38
-Dr. B. R. Ambedkar Balanagar,Paradise,24,17.477586,78.42099,17.443496,78.486186,False,Ameerpet,10.81
-Dr. B. R. Ambedkar Balanagar,Peddamma Gudi,26,17.477586,78.42099,17.4306,78.408448,False,Ameerpet,10.48
-Dr. B. R. Ambedkar Balanagar,Prakash Nagar,20,17.477586,78.42099,17.445126,78.465903,False,Ameerpet,8.63
-Dr. B. R. Ambedkar Balanagar,Punjagutta,12,17.477586,78.42099,17.428583,78.45115,True,,6.69
-Dr. B. R. Ambedkar Balanagar,RTC Cross Roads,39,17.477586,78.42099,17.407119,78.496553,False,Mahatma Gandhi Bus Station,17.79
-Dr. B. R. Ambedkar Balanagar,Raidurg,36,17.477586,78.42099,17.442274,78.377094,False,Ameerpet,15.55
-Dr. B. R. Ambedkar Balanagar,Rasoolpura,22,17.477586,78.42099,17.443606,78.476363,False,Ameerpet,9.77
-Dr. B. R. Ambedkar Balanagar,Road No. 5 Jubilee Hills,22,17.477586,78.42099,17.430088,78.422995,False,Ameerpet,8.29
-Dr. B. R. Ambedkar Balanagar,S R Nagar,8,17.477586,78.42099,17.441659,78.441634,True,,4.9
-Dr. B. R. Ambedkar Balanagar,Secunderabad East,28,17.477586,78.42099,17.435789,78.505431,False,Ameerpet,13.89
-Dr. B. R. Ambedkar Balanagar,Secunderabad West,44,17.477586,78.42099,17.433718,78.499194,False,Mahatma Gandhi Bus Station,21.12
-Dr. B. R. Ambedkar Balanagar,Stadium,39,17.477586,78.42099,17.408538,78.553504,False,Ameerpet,20.62
-Dr. B. R. Ambedkar Balanagar,Sultan Bazaar,33,17.477586,78.42099,17.384134,78.483697,False,Mahatma Gandhi Bus Station,14.73
-Dr. B. R. Ambedkar Balanagar,Tarnaka,33,17.477586,78.42099,17.428297,78.52856,False,Ameerpet,16.69
-Dr. B. R. Ambedkar Balanagar,Uppal,40,17.477586,78.42099,17.400078,78.560251,False,Ameerpet,21.7
-Dr. B. R. Ambedkar Balanagar,Victoria Memorial,37,17.477586,78.42099,17.361889,78.543962,True,,20.83
-Dr. B. R. Ambedkar Balanagar,Yousufguda,20,17.477586,78.42099,17.435081,78.427292,False,Ameerpet,7.44
+Balanagar,Ameerpet,10,17.477586,78.42099,17.435697,78.444603,True,,5.64
+Balanagar,Assembly,20,17.477586,78.42099,17.39813,78.470786,True,,10.95
+Balanagar,Begumpet,18,17.477586,78.42099,17.437583,78.456945,False,Ameerpet,7.21
+Balanagar,Bharat Nagar,3,17.477586,78.42099,17.464046,78.430048,True,,2.13
+Balanagar,Chaitanyapuri,35,17.477586,78.42099,17.368398,78.535855,True,,19.6
+Balanagar,Chikkadpally,37,17.477586,78.42099,17.400805,78.494876,False,Mahatma Gandhi Bus Station,16.98
+Balanagar,Dilsukhnagar,34,17.477586,78.42099,17.368594,78.525728,True,,18.52
+Balanagar,Durgam Cheruvu,31,17.477586,78.42099,17.442854,78.387646,False,Ameerpet,13.27
+Balanagar,ESI Hospital,6,17.477586,78.42099,17.447377,78.438352,True,,4.18
+Balanagar,Erragadda,5,17.477586,78.42099,17.457235,78.433531,True,,2.97
+Balanagar,Gandhi Bhavan,23,17.477586,78.42099,17.38609,78.473099,True,,12.39
+Balanagar,Gandhi Hospital,41,17.477586,78.42099,17.425639,78.501872,False,Mahatma Gandhi Bus Station,19.88
+Balanagar,HITEC City,32,17.477586,78.42099,17.449025,78.383239,False,Ameerpet,14.1
+Balanagar,Habsiguda,35,17.477586,78.42099,17.420218,78.540538,False,Ameerpet,18.29
+Balanagar,Irrum Manzil,13,17.477586,78.42099,17.42036,78.456186,True,,7.72
+Balanagar,JBS Parade Ground,46,17.477586,78.42099,17.444472,78.497483,False,Ameerpet,22.44
+Balanagar,JNTU College,6,17.477586,78.42099,17.498679,78.389015,True,,3.95
+Balanagar,Jubilee Hills Check Post,24,17.477586,78.42099,17.42834,78.413688,False,Ameerpet,9.54
+Balanagar,KPHB Colony,4,17.477586,78.42099,17.493796,78.401668,True,,2.46
+Balanagar,Khairatabad,16,17.477586,78.42099,17.411614,78.460844,True,,8.85
+Balanagar,Kukatpally,2,17.477586,78.42099,17.485121,78.411553,True,,1.0
+Balanagar,LB Nagar,39,17.477586,78.42099,17.349724,78.547972,True,,22.26
+Balanagar,Lakdi Ka Pul,18,17.477586,78.42099,17.403687,78.464591,True,,9.95
+Balanagar,Madhapur,28,17.477586,78.42099,17.436879,78.400681,False,Ameerpet,11.38
+Balanagar,Madhura Nagar,17,17.477586,78.42099,17.437715,78.44055,False,Ameerpet,6.34
+Balanagar,Mahatma Gandhi Bus Station,26,17.477586,78.42099,17.379856,78.485961,True,,14.0
+Balanagar,Malakpet,28,17.477586,78.42099,17.377292,78.493831,True,,14.91
+Balanagar,Mettuguda,31,17.477586,78.42099,17.435572,78.5196,False,Ameerpet,15.44
+Balanagar,Miyapur,8,17.477586,78.42099,17.4964542,78.3729359,True,,5.7
+Balanagar,Moosapet,2,17.477586,78.42099,17.472162,78.425925,True,,1.13
+Balanagar,Musarambagh,31,17.477586,78.42099,17.371136,78.511946,True,,17.01
+Balanagar,Musheerabad,40,17.477586,78.42099,17.418808,78.499823,False,Mahatma Gandhi Bus Station,18.99
+Balanagar,Ngri,37,17.477586,78.42099,17.414859,78.546309,False,Ameerpet,19.44
+Balanagar,Nagole,42,17.477586,78.42099,17.39051,78.558659,False,Ameerpet,22.73
+Balanagar,Nampally,21,17.477586,78.42099,17.392352,78.470132,True,,11.61
+Balanagar,Narayanguda,35,17.477586,78.42099,17.394383,78.489863,False,Mahatma Gandhi Bus Station,16.05
+Balanagar,New Market,30,17.477586,78.42099,17.373486,78.502903,True,,16.02
+Balanagar,Osmania Medical College,24,17.477586,78.42099,17.382358,78.481073,True,,13.38
+Balanagar,Paradise,24,17.477586,78.42099,17.443496,78.486186,False,Ameerpet,10.81
+Balanagar,Peddamma Gudi,26,17.477586,78.42099,17.4306,78.408448,False,Ameerpet,10.48
+Balanagar,Prakash Nagar,20,17.477586,78.42099,17.445126,78.465903,False,Ameerpet,8.63
+Balanagar,Punjagutta,12,17.477586,78.42099,17.428583,78.45115,True,,6.69
+Balanagar,RTC Cross Roads,39,17.477586,78.42099,17.407119,78.496553,False,Mahatma Gandhi Bus Station,17.79
+Balanagar,Raidurg,36,17.477586,78.42099,17.442274,78.377094,False,Ameerpet,15.55
+Balanagar,Rasoolpura,22,17.477586,78.42099,17.443606,78.476363,False,Ameerpet,9.77
+Balanagar,Road No. 5 Jubilee Hills,22,17.477586,78.42099,17.430088,78.422995,False,Ameerpet,8.29
+Balanagar,S R Nagar,8,17.477586,78.42099,17.441659,78.441634,True,,4.9
+Balanagar,Secunderabad East,28,17.477586,78.42099,17.435789,78.505431,False,Ameerpet,13.89
+Balanagar,Secunderabad West,44,17.477586,78.42099,17.433718,78.499194,False,Mahatma Gandhi Bus Station,21.12
+Balanagar,Stadium,39,17.477586,78.42099,17.408538,78.553504,False,Ameerpet,20.62
+Balanagar,Sultan Bazaar,33,17.477586,78.42099,17.384134,78.483697,False,Mahatma Gandhi Bus Station,14.73
+Balanagar,Tarnaka,33,17.477586,78.42099,17.428297,78.52856,False,Ameerpet,16.69
+Balanagar,Uppal,40,17.477586,78.42099,17.400078,78.560251,False,Ameerpet,21.7
+Balanagar,Victoria Memorial,37,17.477586,78.42099,17.361889,78.543962,True,,20.83
+Balanagar,Yousufguda,20,17.477586,78.42099,17.435081,78.427292,False,Ameerpet,7.44
 Begumpet,Ameerpet,3,17.437583,78.456945,17.435697,78.444603,True,,1.57
 Begumpet,Assembly,18,17.437583,78.456945,17.39813,78.470786,False,Ameerpet,6.88
-Begumpet,Dr. B. R. Ambedkar Balanagar,18,17.437583,78.456945,17.477586,78.42099,False,Ameerpet,7.21
+Begumpet,Balanagar,18,17.437583,78.456945,17.477586,78.42099,False,Ameerpet,7.21
 Begumpet,Bharat Nagar,15,17.437583,78.456945,17.464046,78.430048,False,Ameerpet,5.08
 Begumpet,Chaitanyapuri,33,17.437583,78.456945,17.368398,78.535855,False,Ameerpet,15.53
 Begumpet,Chikkadpally,22,17.437583,78.456945,17.400805,78.494876,False,JBS Parade Ground,10.26
@@ -221,7 +221,7 @@ Begumpet,Victoria Memorial,35,17.437583,78.456945,17.361889,78.543962,False,Amee
 Begumpet,Yousufguda,8,17.437583,78.456945,17.435081,78.427292,True,,3.37
 Bharat Nagar,Ameerpet,7,17.464046,78.430048,17.435697,78.444603,True,,3.51
 Bharat Nagar,Assembly,17,17.464046,78.430048,17.39813,78.470786,True,,8.82
-Bharat Nagar,Dr. B. R. Ambedkar Balanagar,3,17.464046,78.430048,17.477586,78.42099,True,,2.13
+Bharat Nagar,Balanagar,3,17.464046,78.430048,17.477586,78.42099,True,,2.13
 Bharat Nagar,Begumpet,15,17.464046,78.430048,17.437583,78.456945,False,Ameerpet,5.08
 Bharat Nagar,Chaitanyapuri,32,17.464046,78.430048,17.368398,78.535855,True,,17.47
 Bharat Nagar,Chikkadpally,34,17.464046,78.430048,17.400805,78.494876,False,Mahatma Gandhi Bus Station,14.85
@@ -276,7 +276,7 @@ Bharat Nagar,Victoria Memorial,34,17.464046,78.430048,17.361889,78.543962,True,,
 Bharat Nagar,Yousufguda,17,17.464046,78.430048,17.435081,78.427292,False,Ameerpet,5.31
 Chaitanyapuri,Ameerpet,25,17.368398,78.535855,17.435697,78.444603,True,,13.96
 Chaitanyapuri,Assembly,15,17.368398,78.535855,17.39813,78.470786,True,,8.65
-Chaitanyapuri,Dr. B. R. Ambedkar Balanagar,35,17.368398,78.535855,17.477586,78.42099,True,,19.6
+Chaitanyapuri,Balanagar,35,17.368398,78.535855,17.477586,78.42099,True,,19.6
 Chaitanyapuri,Begumpet,33,17.368398,78.535855,17.437583,78.456945,False,Ameerpet,15.53
 Chaitanyapuri,Bharat Nagar,32,17.368398,78.535855,17.464046,78.430048,True,,17.47
 Chaitanyapuri,Chikkadpally,20,17.368398,78.535855,17.400805,78.494876,False,Mahatma Gandhi Bus Station,8.58
@@ -331,7 +331,7 @@ Chaitanyapuri,Victoria Memorial,2,17.368398,78.535855,17.361889,78.543962,True,,
 Chaitanyapuri,Yousufguda,35,17.368398,78.535855,17.435081,78.427292,False,Ameerpet,15.76
 Chikkadpally,Ameerpet,27,17.400805,78.494876,17.435697,78.444603,False,Mahatma Gandhi Bus Station,11.34
 Chikkadpally,Assembly,17,17.400805,78.494876,17.39813,78.470786,False,Mahatma Gandhi Bus Station,6.03
-Chikkadpally,Dr. B. R. Ambedkar Balanagar,37,17.400805,78.494876,17.477586,78.42099,False,Mahatma Gandhi Bus Station,16.98
+Chikkadpally,Balanagar,37,17.400805,78.494876,17.477586,78.42099,False,Mahatma Gandhi Bus Station,16.98
 Chikkadpally,Begumpet,22,17.400805,78.494876,17.437583,78.456945,False,JBS Parade Ground,10.26
 Chikkadpally,Bharat Nagar,34,17.400805,78.494876,17.464046,78.430048,False,Mahatma Gandhi Bus Station,14.85
 Chikkadpally,Chaitanyapuri,20,17.400805,78.494876,17.368398,78.535855,False,Mahatma Gandhi Bus Station,8.58
@@ -386,7 +386,7 @@ Chikkadpally,Victoria Memorial,22,17.400805,78.494876,17.361889,78.543962,False,
 Chikkadpally,Yousufguda,30,17.400805,78.494876,17.435081,78.427292,False,JBS Parade Ground,13.63
 Dilsukhnagar,Ameerpet,24,17.368594,78.525728,17.435697,78.444603,True,,12.88
 Dilsukhnagar,Assembly,14,17.368594,78.525728,17.39813,78.470786,True,,7.57
-Dilsukhnagar,Dr. B. R. Ambedkar Balanagar,34,17.368594,78.525728,17.477586,78.42099,True,,18.52
+Dilsukhnagar,Balanagar,34,17.368594,78.525728,17.477586,78.42099,True,,18.52
 Dilsukhnagar,Begumpet,32,17.368594,78.525728,17.437583,78.456945,False,Ameerpet,14.45
 Dilsukhnagar,Bharat Nagar,31,17.368594,78.525728,17.464046,78.430048,True,,16.39
 Dilsukhnagar,Chaitanyapuri,1,17.368594,78.525728,17.368398,78.535855,True,,1.08
@@ -441,7 +441,7 @@ Dilsukhnagar,Victoria Memorial,3,17.368594,78.525728,17.361889,78.543962,True,,2
 Dilsukhnagar,Yousufguda,34,17.368594,78.525728,17.435081,78.427292,False,Ameerpet,14.68
 Durgam Cheruvu,Ameerpet,16,17.442854,78.387646,17.435697,78.444603,True,,7.63
 Durgam Cheruvu,Assembly,31,17.442854,78.387646,17.39813,78.470786,False,Ameerpet,12.94
-Durgam Cheruvu,Dr. B. R. Ambedkar Balanagar,31,17.442854,78.387646,17.477586,78.42099,False,Ameerpet,13.27
+Durgam Cheruvu,Balanagar,31,17.442854,78.387646,17.477586,78.42099,False,Ameerpet,13.27
 Durgam Cheruvu,Begumpet,19,17.442854,78.387646,17.437583,78.456945,True,,9.2
 Durgam Cheruvu,Bharat Nagar,28,17.442854,78.387646,17.464046,78.430048,False,Ameerpet,11.14
 Durgam Cheruvu,Chaitanyapuri,46,17.442854,78.387646,17.368398,78.535855,False,Ameerpet,21.59
@@ -496,7 +496,7 @@ Durgam Cheruvu,Victoria Memorial,48,17.442854,78.387646,17.361889,78.543962,Fals
 Durgam Cheruvu,Yousufguda,11,17.442854,78.387646,17.435081,78.427292,True,,5.83
 ESI Hospital,Ameerpet,4,17.447377,78.438352,17.435697,78.444603,True,,1.46
 ESI Hospital,Assembly,14,17.447377,78.438352,17.39813,78.470786,True,,6.77
-ESI Hospital,Dr. B. R. Ambedkar Balanagar,6,17.447377,78.438352,17.477586,78.42099,True,,4.18
+ESI Hospital,Balanagar,6,17.447377,78.438352,17.477586,78.42099,True,,4.18
 ESI Hospital,Begumpet,12,17.447377,78.438352,17.437583,78.456945,False,Ameerpet,3.03
 ESI Hospital,Bharat Nagar,3,17.447377,78.438352,17.464046,78.430048,True,,2.05
 ESI Hospital,Chaitanyapuri,29,17.447377,78.438352,17.368398,78.535855,True,,15.42
@@ -551,7 +551,7 @@ ESI Hospital,Victoria Memorial,31,17.447377,78.438352,17.361889,78.543962,True,,
 ESI Hospital,Yousufguda,14,17.447377,78.438352,17.435081,78.427292,False,Ameerpet,3.26
 Erragadda,Ameerpet,5,17.457235,78.433531,17.435697,78.444603,True,,2.67
 Erragadda,Assembly,15,17.457235,78.433531,17.39813,78.470786,True,,7.98
-Erragadda,Dr. B. R. Ambedkar Balanagar,5,17.457235,78.433531,17.477586,78.42099,True,,2.97
+Erragadda,Balanagar,5,17.457235,78.433531,17.477586,78.42099,True,,2.97
 Erragadda,Begumpet,13,17.457235,78.433531,17.437583,78.456945,False,Ameerpet,4.24
 Erragadda,Bharat Nagar,2,17.457235,78.433531,17.464046,78.430048,True,,0.84
 Erragadda,Chaitanyapuri,30,17.457235,78.433531,17.368398,78.535855,True,,16.63
@@ -606,7 +606,7 @@ Erragadda,Victoria Memorial,32,17.457235,78.433531,17.361889,78.543962,True,,17.
 Erragadda,Yousufguda,15,17.457235,78.433531,17.435081,78.427292,False,Ameerpet,4.47
 Gandhi Bhavan,Ameerpet,13,17.38609,78.473099,17.435697,78.444603,True,,6.75
 Gandhi Bhavan,Assembly,3,17.38609,78.473099,17.39813,78.470786,True,,1.44
-Gandhi Bhavan,Dr. B. R. Ambedkar Balanagar,23,17.38609,78.473099,17.477586,78.42099,True,,12.39
+Gandhi Bhavan,Balanagar,23,17.38609,78.473099,17.477586,78.42099,True,,12.39
 Gandhi Bhavan,Begumpet,21,17.38609,78.473099,17.437583,78.456945,False,Ameerpet,8.32
 Gandhi Bhavan,Bharat Nagar,20,17.38609,78.473099,17.464046,78.430048,True,,10.26
 Gandhi Bhavan,Chaitanyapuri,12,17.38609,78.473099,17.368398,78.535855,True,,7.21
@@ -661,7 +661,7 @@ Gandhi Bhavan,Victoria Memorial,14,17.38609,78.473099,17.361889,78.543962,True,,
 Gandhi Bhavan,Yousufguda,23,17.38609,78.473099,17.435081,78.427292,False,Ameerpet,8.55
 Gandhi Hospital,Ameerpet,31,17.425639,78.501872,17.435697,78.444603,False,JBS Parade Ground,14.24
 Gandhi Hospital,Assembly,21,17.425639,78.501872,17.39813,78.470786,False,Mahatma Gandhi Bus Station,8.93
-Gandhi Hospital,Dr. B. R. Ambedkar Balanagar,41,17.425639,78.501872,17.477586,78.42099,False,Mahatma Gandhi Bus Station,19.88
+Gandhi Hospital,Balanagar,41,17.425639,78.501872,17.477586,78.42099,False,Mahatma Gandhi Bus Station,19.88
 Gandhi Hospital,Begumpet,18,17.425639,78.501872,17.437583,78.456945,False,JBS Parade Ground,7.36
 Gandhi Hospital,Bharat Nagar,38,17.425639,78.501872,17.464046,78.430048,False,Mahatma Gandhi Bus Station,17.75
 Gandhi Hospital,Chaitanyapuri,24,17.425639,78.501872,17.368398,78.535855,False,Mahatma Gandhi Bus Station,11.48
@@ -716,7 +716,7 @@ Gandhi Hospital,Victoria Memorial,26,17.425639,78.501872,17.361889,78.543962,Fal
 Gandhi Hospital,Yousufguda,26,17.425639,78.501872,17.435081,78.427292,False,JBS Parade Ground,10.73
 HITEC City,Ameerpet,17,17.449025,78.383239,17.435697,78.444603,True,,8.46
 HITEC City,Assembly,32,17.449025,78.383239,17.39813,78.470786,False,Ameerpet,13.77
-HITEC City,Dr. B. R. Ambedkar Balanagar,32,17.449025,78.383239,17.477586,78.42099,False,Ameerpet,14.1
+HITEC City,Balanagar,32,17.449025,78.383239,17.477586,78.42099,False,Ameerpet,14.1
 HITEC City,Begumpet,20,17.449025,78.383239,17.437583,78.456945,True,,10.03
 HITEC City,Bharat Nagar,29,17.449025,78.383239,17.464046,78.430048,False,Ameerpet,11.97
 HITEC City,Chaitanyapuri,47,17.449025,78.383239,17.368398,78.535855,False,Ameerpet,22.42
@@ -771,7 +771,7 @@ HITEC City,Victoria Memorial,49,17.449025,78.383239,17.361889,78.543962,False,Am
 HITEC City,Yousufguda,12,17.449025,78.383239,17.435081,78.427292,True,,6.66
 Habsiguda,Ameerpet,20,17.420218,78.540538,17.435697,78.444603,True,,12.65
 Habsiguda,Assembly,35,17.420218,78.540538,17.39813,78.470786,False,Ameerpet,17.96
-Habsiguda,Dr. B. R. Ambedkar Balanagar,35,17.420218,78.540538,17.477586,78.42099,False,Ameerpet,18.29
+Habsiguda,Balanagar,35,17.420218,78.540538,17.477586,78.42099,False,Ameerpet,18.29
 Habsiguda,Begumpet,17,17.420218,78.540538,17.437583,78.456945,True,,11.08
 Habsiguda,Bharat Nagar,32,17.420218,78.540538,17.464046,78.430048,False,Ameerpet,16.16
 Habsiguda,Chaitanyapuri,50,17.420218,78.540538,17.368398,78.535855,False,Ameerpet,26.61
@@ -826,7 +826,7 @@ Habsiguda,Victoria Memorial,52,17.420218,78.540538,17.361889,78.543962,False,Ame
 Habsiguda,Yousufguda,25,17.420218,78.540538,17.435081,78.427292,True,,14.45
 Irrum Manzil,Ameerpet,3,17.42036,78.456186,17.435697,78.444603,True,,2.08
 Irrum Manzil,Assembly,7,17.42036,78.456186,17.39813,78.470786,True,,3.23
-Irrum Manzil,Dr. B. R. Ambedkar Balanagar,13,17.42036,78.456186,17.477586,78.42099,True,,7.72
+Irrum Manzil,Balanagar,13,17.42036,78.456186,17.477586,78.42099,True,,7.72
 Irrum Manzil,Begumpet,11,17.42036,78.456186,17.437583,78.456945,False,Ameerpet,3.65
 Irrum Manzil,Bharat Nagar,10,17.42036,78.456186,17.464046,78.430048,True,,5.59
 Irrum Manzil,Chaitanyapuri,22,17.42036,78.456186,17.368398,78.535855,True,,11.88
@@ -881,7 +881,7 @@ Irrum Manzil,Victoria Memorial,24,17.42036,78.456186,17.361889,78.543962,True,,1
 Irrum Manzil,Yousufguda,13,17.42036,78.456186,17.435081,78.427292,False,Ameerpet,3.88
 JBS Parade Ground,Ameerpet,36,17.444472,78.497483,17.435697,78.444603,False,,16.8
 JBS Parade Ground,Assembly,26,17.444472,78.497483,17.39813,78.470786,False,Mahatma Gandhi Bus Station,11.49
-JBS Parade Ground,Dr. B. R. Ambedkar Balanagar,46,17.444472,78.497483,17.477586,78.42099,False,Ameerpet,22.44
+JBS Parade Ground,Balanagar,46,17.444472,78.497483,17.477586,78.42099,False,Ameerpet,22.44
 JBS Parade Ground,Begumpet,8,17.444472,78.497483,17.437583,78.456945,True,,4.8
 JBS Parade Ground,Bharat Nagar,43,17.444472,78.497483,17.464046,78.430048,False,Ameerpet,20.31
 JBS Parade Ground,Chaitanyapuri,29,17.444472,78.497483,17.368398,78.535855,False,Mahatma Gandhi Bus Station,14.04
@@ -936,7 +936,7 @@ JBS Parade Ground,Victoria Memorial,31,17.444472,78.497483,17.361889,78.543962,F
 JBS Parade Ground,Yousufguda,16,17.444472,78.497483,17.435081,78.427292,True,,8.17
 JNTU College,Ameerpet,16,17.498679,78.389015,17.435697,78.444603,True,,9.59
 JNTU College,Assembly,26,17.498679,78.389015,17.39813,78.470786,True,,14.9
-JNTU College,Dr. B. R. Ambedkar Balanagar,6,17.498679,78.389015,17.477586,78.42099,True,,3.95
+JNTU College,Balanagar,6,17.498679,78.389015,17.477586,78.42099,True,,3.95
 JNTU College,Begumpet,24,17.498679,78.389015,17.437583,78.456945,False,Ameerpet,11.16
 JNTU College,Bharat Nagar,9,17.498679,78.389015,17.464046,78.430048,True,,6.08
 JNTU College,Chaitanyapuri,41,17.498679,78.389015,17.368398,78.535855,True,,23.55
@@ -991,7 +991,7 @@ JNTU College,Victoria Memorial,43,17.498679,78.389015,17.361889,78.543962,True,,
 JNTU College,Yousufguda,26,17.498679,78.389015,17.435081,78.427292,False,Ameerpet,11.39
 Jubilee Hills Check Post,Ameerpet,9,17.42834,78.413688,17.435697,78.444603,True,,3.9
 Jubilee Hills Check Post,Assembly,24,17.42834,78.413688,17.39813,78.470786,False,Ameerpet,9.21
-Jubilee Hills Check Post,Dr. B. R. Ambedkar Balanagar,24,17.42834,78.413688,17.477586,78.42099,False,Ameerpet,9.54
+Jubilee Hills Check Post,Balanagar,24,17.42834,78.413688,17.477586,78.42099,False,Ameerpet,9.54
 Jubilee Hills Check Post,Begumpet,12,17.42834,78.413688,17.437583,78.456945,True,,5.47
 Jubilee Hills Check Post,Bharat Nagar,21,17.42834,78.413688,17.464046,78.430048,False,Ameerpet,7.41
 Jubilee Hills Check Post,Chaitanyapuri,39,17.42834,78.413688,17.368398,78.535855,False,Ameerpet,17.86
@@ -1046,7 +1046,7 @@ Jubilee Hills Check Post,Victoria Memorial,41,17.42834,78.413688,17.361889,78.54
 Jubilee Hills Check Post,Yousufguda,4,17.42834,78.413688,17.435081,78.427292,True,,2.1
 KPHB Colony,Ameerpet,14,17.493796,78.401668,17.435697,78.444603,True,,8.1
 KPHB Colony,Assembly,24,17.493796,78.401668,17.39813,78.470786,True,,13.41
-KPHB Colony,Dr. B. R. Ambedkar Balanagar,4,17.493796,78.401668,17.477586,78.42099,True,,2.46
+KPHB Colony,Balanagar,4,17.493796,78.401668,17.477586,78.42099,True,,2.46
 KPHB Colony,Begumpet,22,17.493796,78.401668,17.437583,78.456945,False,Ameerpet,9.67
 KPHB Colony,Bharat Nagar,7,17.493796,78.401668,17.464046,78.430048,True,,4.59
 KPHB Colony,Chaitanyapuri,39,17.493796,78.401668,17.368398,78.535855,True,,22.06
@@ -1101,7 +1101,7 @@ KPHB Colony,Victoria Memorial,41,17.493796,78.401668,17.361889,78.543962,True,,2
 KPHB Colony,Yousufguda,24,17.493796,78.401668,17.435081,78.427292,False,Ameerpet,9.9
 Khairatabad,Ameerpet,6,17.411614,78.460844,17.435697,78.444603,True,,3.21
 Khairatabad,Assembly,4,17.411614,78.460844,17.39813,78.470786,True,,2.1
-Khairatabad,Dr. B. R. Ambedkar Balanagar,16,17.411614,78.460844,17.477586,78.42099,True,,8.85
+Khairatabad,Balanagar,16,17.411614,78.460844,17.477586,78.42099,True,,8.85
 Khairatabad,Begumpet,14,17.411614,78.460844,17.437583,78.456945,False,Ameerpet,4.78
 Khairatabad,Bharat Nagar,13,17.411614,78.460844,17.464046,78.430048,True,,6.72
 Khairatabad,Chaitanyapuri,19,17.411614,78.460844,17.368398,78.535855,True,,10.75
@@ -1156,7 +1156,7 @@ Khairatabad,Victoria Memorial,21,17.411614,78.460844,17.361889,78.543962,True,,1
 Khairatabad,Yousufguda,16,17.411614,78.460844,17.435081,78.427292,False,Ameerpet,5.01
 Kukatpally,Ameerpet,12,17.485121,78.411553,17.435697,78.444603,True,,6.64
 Kukatpally,Assembly,22,17.485121,78.411553,17.39813,78.470786,True,,11.95
-Kukatpally,Dr. B. R. Ambedkar Balanagar,2,17.485121,78.411553,17.477586,78.42099,True,,1.0
+Kukatpally,Balanagar,2,17.485121,78.411553,17.477586,78.42099,True,,1.0
 Kukatpally,Begumpet,20,17.485121,78.411553,17.437583,78.456945,False,Ameerpet,8.21
 Kukatpally,Bharat Nagar,5,17.485121,78.411553,17.464046,78.430048,True,,3.13
 Kukatpally,Chaitanyapuri,37,17.485121,78.411553,17.368398,78.535855,True,,20.6
@@ -1211,7 +1211,7 @@ Kukatpally,Victoria Memorial,39,17.485121,78.411553,17.361889,78.543962,True,,21
 Kukatpally,Yousufguda,22,17.485121,78.411553,17.435081,78.427292,False,Ameerpet,8.44
 LB Nagar,Ameerpet,29,17.349724,78.547972,17.435697,78.444603,True,,16.62
 LB Nagar,Assembly,19,17.349724,78.547972,17.39813,78.470786,True,,11.31
-LB Nagar,Dr. B. R. Ambedkar Balanagar,39,17.349724,78.547972,17.477586,78.42099,True,,22.26
+LB Nagar,Balanagar,39,17.349724,78.547972,17.477586,78.42099,True,,22.26
 LB Nagar,Begumpet,37,17.349724,78.547972,17.437583,78.456945,False,Ameerpet,18.19
 LB Nagar,Bharat Nagar,36,17.349724,78.547972,17.464046,78.430048,True,,20.13
 LB Nagar,Chaitanyapuri,4,17.349724,78.547972,17.368398,78.535855,True,,2.66
@@ -1266,7 +1266,7 @@ LB Nagar,Victoria Memorial,2,17.349724,78.547972,17.361889,78.543962,True,,1.43
 LB Nagar,Yousufguda,39,17.349724,78.547972,17.435081,78.427292,False,Ameerpet,18.42
 Lakdi Ka Pul,Ameerpet,8,17.403687,78.464591,17.435697,78.444603,True,,4.31
 Lakdi Ka Pul,Assembly,2,17.403687,78.464591,17.39813,78.470786,True,,1.0
-Lakdi Ka Pul,Dr. B. R. Ambedkar Balanagar,18,17.403687,78.464591,17.477586,78.42099,True,,9.95
+Lakdi Ka Pul,Balanagar,18,17.403687,78.464591,17.477586,78.42099,True,,9.95
 Lakdi Ka Pul,Begumpet,16,17.403687,78.464591,17.437583,78.456945,False,Ameerpet,5.88
 Lakdi Ka Pul,Bharat Nagar,15,17.403687,78.464591,17.464046,78.430048,True,,7.82
 Lakdi Ka Pul,Chaitanyapuri,17,17.403687,78.464591,17.368398,78.535855,True,,9.65
@@ -1321,7 +1321,7 @@ Lakdi Ka Pul,Victoria Memorial,19,17.403687,78.464591,17.361889,78.543962,True,,
 Lakdi Ka Pul,Yousufguda,18,17.403687,78.464591,17.435081,78.427292,False,Ameerpet,6.11
 Madhapur,Ameerpet,13,17.436879,78.400681,17.435697,78.444603,True,,5.74
 Madhapur,Assembly,28,17.436879,78.400681,17.39813,78.470786,False,Ameerpet,11.05
-Madhapur,Dr. B. R. Ambedkar Balanagar,28,17.436879,78.400681,17.477586,78.42099,False,Ameerpet,11.38
+Madhapur,Balanagar,28,17.436879,78.400681,17.477586,78.42099,False,Ameerpet,11.38
 Madhapur,Begumpet,16,17.436879,78.400681,17.437583,78.456945,True,,7.31
 Madhapur,Bharat Nagar,25,17.436879,78.400681,17.464046,78.430048,False,Ameerpet,9.25
 Madhapur,Chaitanyapuri,43,17.436879,78.400681,17.368398,78.535855,False,Ameerpet,19.7
@@ -1376,7 +1376,7 @@ Madhapur,Victoria Memorial,45,17.436879,78.400681,17.361889,78.543962,False,Amee
 Madhapur,Yousufguda,8,17.436879,78.400681,17.435081,78.427292,True,,3.94
 Madhura Nagar,Ameerpet,2,17.437715,78.44055,17.435697,78.444603,True,,0.7
 Madhura Nagar,Assembly,17,17.437715,78.44055,17.39813,78.470786,False,Ameerpet,6.01
-Madhura Nagar,Dr. B. R. Ambedkar Balanagar,17,17.437715,78.44055,17.477586,78.42099,False,Ameerpet,6.34
+Madhura Nagar,Balanagar,17,17.437715,78.44055,17.477586,78.42099,False,Ameerpet,6.34
 Madhura Nagar,Begumpet,5,17.437715,78.44055,17.437583,78.456945,True,,2.27
 Madhura Nagar,Bharat Nagar,14,17.437715,78.44055,17.464046,78.430048,False,Ameerpet,4.21
 Madhura Nagar,Chaitanyapuri,32,17.437715,78.44055,17.368398,78.535855,False,Ameerpet,14.66
@@ -1431,7 +1431,7 @@ Madhura Nagar,Victoria Memorial,34,17.437715,78.44055,17.361889,78.543962,False,
 Madhura Nagar,Yousufguda,3,17.437715,78.44055,17.435081,78.427292,True,,1.1
 Mahatma Gandhi Bus Station,Ameerpet,31,17.379856,78.485961,17.435697,78.444603,False,,14.81
 Mahatma Gandhi Bus Station,Assembly,6,17.379856,78.485961,17.39813,78.470786,True,,3.05
-Mahatma Gandhi Bus Station,Dr. B. R. Ambedkar Balanagar,26,17.379856,78.485961,17.477586,78.42099,True,,14.0
+Mahatma Gandhi Bus Station,Balanagar,26,17.379856,78.485961,17.477586,78.42099,True,,14.0
 Mahatma Gandhi Bus Station,Begumpet,24,17.379856,78.485961,17.437583,78.456945,False,Ameerpet,9.93
 Mahatma Gandhi Bus Station,Bharat Nagar,23,17.379856,78.485961,17.464046,78.430048,True,,11.87
 Mahatma Gandhi Bus Station,Chaitanyapuri,9,17.379856,78.485961,17.368398,78.535855,True,,5.6
@@ -1486,7 +1486,7 @@ Mahatma Gandhi Bus Station,Victoria Memorial,11,17.379856,78.485961,17.361889,78
 Mahatma Gandhi Bus Station,Yousufguda,26,17.379856,78.485961,17.435081,78.427292,False,Ameerpet,10.16
 Malakpet,Ameerpet,18,17.377292,78.493831,17.435697,78.444603,True,,9.27
 Malakpet,Assembly,8,17.377292,78.493831,17.39813,78.470786,True,,3.96
-Malakpet,Dr. B. R. Ambedkar Balanagar,28,17.377292,78.493831,17.477586,78.42099,True,,14.91
+Malakpet,Balanagar,28,17.377292,78.493831,17.477586,78.42099,True,,14.91
 Malakpet,Begumpet,26,17.377292,78.493831,17.437583,78.456945,False,Ameerpet,10.84
 Malakpet,Bharat Nagar,25,17.377292,78.493831,17.464046,78.430048,True,,12.78
 Malakpet,Chaitanyapuri,7,17.377292,78.493831,17.368398,78.535855,True,,4.69
@@ -1541,7 +1541,7 @@ Malakpet,Victoria Memorial,9,17.377292,78.493831,17.361889,78.543962,True,,5.92
 Malakpet,Yousufguda,28,17.377292,78.493831,17.435081,78.427292,False,Ameerpet,11.07
 Mettuguda,Ameerpet,16,17.435572,78.5196,17.435697,78.444603,True,,9.8
 Mettuguda,Assembly,31,17.435572,78.5196,17.39813,78.470786,False,Ameerpet,15.11
-Mettuguda,Dr. B. R. Ambedkar Balanagar,31,17.435572,78.5196,17.477586,78.42099,False,Ameerpet,15.44
+Mettuguda,Balanagar,31,17.435572,78.5196,17.477586,78.42099,False,Ameerpet,15.44
 Mettuguda,Begumpet,13,17.435572,78.5196,17.437583,78.456945,True,,8.23
 Mettuguda,Bharat Nagar,28,17.435572,78.5196,17.464046,78.430048,False,Ameerpet,13.31
 Mettuguda,Chaitanyapuri,46,17.435572,78.5196,17.368398,78.535855,False,Ameerpet,23.76
@@ -1596,7 +1596,7 @@ Mettuguda,Victoria Memorial,48,17.435572,78.5196,17.361889,78.543962,False,Ameer
 Mettuguda,Yousufguda,21,17.435572,78.5196,17.435081,78.427292,True,,11.6
 Miyapur,Ameerpet,18,17.4964542,78.3729359,17.435697,78.444603,True,,11.34
 Miyapur,Assembly,28,17.4964542,78.3729359,17.39813,78.470786,True,,16.65
-Miyapur,Dr. B. R. Ambedkar Balanagar,8,17.4964542,78.3729359,17.477586,78.42099,True,,5.7
+Miyapur,Balanagar,8,17.4964542,78.3729359,17.477586,78.42099,True,,5.7
 Miyapur,Begumpet,26,17.4964542,78.3729359,17.437583,78.456945,False,Ameerpet,12.91
 Miyapur,Bharat Nagar,11,17.4964542,78.3729359,17.464046,78.430048,True,,7.83
 Miyapur,Chaitanyapuri,43,17.4964542,78.3729359,17.368398,78.535855,True,,25.3
@@ -1651,7 +1651,7 @@ Miyapur,Victoria Memorial,45,17.4964542,78.3729359,17.361889,78.543962,True,,26.
 Miyapur,Yousufguda,28,17.4964542,78.3729359,17.435081,78.427292,False,Ameerpet,13.14
 Moosapet,Ameerpet,8,17.472162,78.425925,17.435697,78.444603,True,,4.51
 Moosapet,Assembly,18,17.472162,78.425925,17.39813,78.470786,True,,9.82
-Moosapet,Dr. B. R. Ambedkar Balanagar,2,17.472162,78.425925,17.477586,78.42099,True,,1.13
+Moosapet,Balanagar,2,17.472162,78.425925,17.477586,78.42099,True,,1.13
 Moosapet,Begumpet,16,17.472162,78.425925,17.437583,78.456945,False,Ameerpet,6.08
 Moosapet,Bharat Nagar,1,17.472162,78.425925,17.464046,78.430048,True,,1.0
 Moosapet,Chaitanyapuri,33,17.472162,78.425925,17.368398,78.535855,True,,18.47
@@ -1706,7 +1706,7 @@ Moosapet,Victoria Memorial,35,17.472162,78.425925,17.361889,78.543962,True,,19.7
 Moosapet,Yousufguda,18,17.472162,78.425925,17.435081,78.427292,False,Ameerpet,6.31
 Musarambagh,Ameerpet,21,17.371136,78.511946,17.435697,78.444603,True,,11.37
 Musarambagh,Assembly,11,17.371136,78.511946,17.39813,78.470786,True,,6.06
-Musarambagh,Dr. B. R. Ambedkar Balanagar,31,17.371136,78.511946,17.477586,78.42099,True,,17.01
+Musarambagh,Balanagar,31,17.371136,78.511946,17.477586,78.42099,True,,17.01
 Musarambagh,Begumpet,29,17.371136,78.511946,17.437583,78.456945,False,Ameerpet,12.94
 Musarambagh,Bharat Nagar,28,17.371136,78.511946,17.464046,78.430048,True,,14.88
 Musarambagh,Chaitanyapuri,4,17.371136,78.511946,17.368398,78.535855,True,,2.59
@@ -1761,7 +1761,7 @@ Musarambagh,Victoria Memorial,6,17.371136,78.511946,17.361889,78.543962,True,,3.
 Musarambagh,Yousufguda,31,17.371136,78.511946,17.435081,78.427292,False,Ameerpet,13.17
 Musheerabad,Ameerpet,30,17.418808,78.499823,17.435697,78.444603,False,JBS Parade Ground,13.35
 Musheerabad,Assembly,20,17.418808,78.499823,17.39813,78.470786,False,Mahatma Gandhi Bus Station,8.04
-Musheerabad,Dr. B. R. Ambedkar Balanagar,40,17.418808,78.499823,17.477586,78.42099,False,Mahatma Gandhi Bus Station,18.99
+Musheerabad,Balanagar,40,17.418808,78.499823,17.477586,78.42099,False,Mahatma Gandhi Bus Station,18.99
 Musheerabad,Begumpet,19,17.418808,78.499823,17.437583,78.456945,False,JBS Parade Ground,8.25
 Musheerabad,Bharat Nagar,37,17.418808,78.499823,17.464046,78.430048,False,Mahatma Gandhi Bus Station,16.86
 Musheerabad,Chaitanyapuri,23,17.418808,78.499823,17.368398,78.535855,False,Mahatma Gandhi Bus Station,10.59
@@ -1816,7 +1816,7 @@ Musheerabad,Victoria Memorial,25,17.418808,78.499823,17.361889,78.543962,False,M
 Musheerabad,Yousufguda,27,17.418808,78.499823,17.435081,78.427292,False,JBS Parade Ground,11.62
 Ngri,Ameerpet,22,17.414859,78.546309,17.435697,78.444603,True,,13.8
 Ngri,Assembly,37,17.414859,78.546309,17.39813,78.470786,False,Ameerpet,19.11
-Ngri,Dr. B. R. Ambedkar Balanagar,37,17.414859,78.546309,17.477586,78.42099,False,Ameerpet,19.44
+Ngri,Balanagar,37,17.414859,78.546309,17.477586,78.42099,False,Ameerpet,19.44
 Ngri,Begumpet,19,17.414859,78.546309,17.437583,78.456945,True,,12.23
 Ngri,Bharat Nagar,34,17.414859,78.546309,17.464046,78.430048,False,Ameerpet,17.31
 Ngri,Chaitanyapuri,52,17.414859,78.546309,17.368398,78.535855,False,Ameerpet,27.76
@@ -1871,7 +1871,7 @@ Ngri,Victoria Memorial,54,17.414859,78.546309,17.361889,78.543962,False,Ameerpet
 Ngri,Yousufguda,27,17.414859,78.546309,17.435081,78.427292,True,,15.6
 Nagole,Ameerpet,27,17.39051,78.558659,17.435697,78.444603,True,,17.09
 Nagole,Assembly,42,17.39051,78.558659,17.39813,78.470786,False,Ameerpet,22.4
-Nagole,Dr. B. R. Ambedkar Balanagar,42,17.39051,78.558659,17.477586,78.42099,False,Ameerpet,22.73
+Nagole,Balanagar,42,17.39051,78.558659,17.477586,78.42099,False,Ameerpet,22.73
 Nagole,Begumpet,24,17.39051,78.558659,17.437583,78.456945,True,,15.52
 Nagole,Bharat Nagar,39,17.39051,78.558659,17.464046,78.430048,False,Ameerpet,20.6
 Nagole,Chaitanyapuri,57,17.39051,78.558659,17.368398,78.535855,False,Ameerpet,31.05
@@ -1926,7 +1926,7 @@ Nagole,Victoria Memorial,59,17.39051,78.558659,17.361889,78.543962,False,Ameerpe
 Nagole,Yousufguda,32,17.39051,78.558659,17.435081,78.427292,True,,18.89
 Nampally,Ameerpet,11,17.392352,78.470132,17.435697,78.444603,True,,5.97
 Nampally,Assembly,1,17.392352,78.470132,17.39813,78.470786,True,,0.66
-Nampally,Dr. B. R. Ambedkar Balanagar,21,17.392352,78.470132,17.477586,78.42099,True,,11.61
+Nampally,Balanagar,21,17.392352,78.470132,17.477586,78.42099,True,,11.61
 Nampally,Begumpet,19,17.392352,78.470132,17.437583,78.456945,False,Ameerpet,7.54
 Nampally,Bharat Nagar,18,17.392352,78.470132,17.464046,78.430048,True,,9.48
 Nampally,Chaitanyapuri,14,17.392352,78.470132,17.368398,78.535855,True,,7.99
@@ -1981,7 +1981,7 @@ Nampally,Victoria Memorial,16,17.392352,78.470132,17.361889,78.543962,True,,9.22
 Nampally,Yousufguda,21,17.392352,78.470132,17.435081,78.427292,False,Ameerpet,7.77
 Narayanguda,Ameerpet,25,17.394383,78.489863,17.435697,78.444603,False,Mahatma Gandhi Bus Station,10.41
 Narayanguda,Assembly,15,17.394383,78.489863,17.39813,78.470786,False,Mahatma Gandhi Bus Station,5.1
-Narayanguda,Dr. B. R. Ambedkar Balanagar,35,17.394383,78.489863,17.477586,78.42099,False,Mahatma Gandhi Bus Station,16.05
+Narayanguda,Balanagar,35,17.394383,78.489863,17.477586,78.42099,False,Mahatma Gandhi Bus Station,16.05
 Narayanguda,Begumpet,24,17.394383,78.489863,17.437583,78.456945,False,JBS Parade Ground,11.19
 Narayanguda,Bharat Nagar,32,17.394383,78.489863,17.464046,78.430048,False,Mahatma Gandhi Bus Station,13.92
 Narayanguda,Chaitanyapuri,18,17.394383,78.489863,17.368398,78.535855,False,Mahatma Gandhi Bus Station,7.65
@@ -2036,7 +2036,7 @@ Narayanguda,Victoria Memorial,20,17.394383,78.489863,17.361889,78.543962,False,M
 Narayanguda,Yousufguda,32,17.394383,78.489863,17.435081,78.427292,False,JBS Parade Ground,14.56
 New Market,Ameerpet,20,17.373486,78.502903,17.435697,78.444603,True,,10.38
 New Market,Assembly,10,17.373486,78.502903,17.39813,78.470786,True,,5.07
-New Market,Dr. B. R. Ambedkar Balanagar,30,17.373486,78.502903,17.477586,78.42099,True,,16.02
+New Market,Balanagar,30,17.373486,78.502903,17.477586,78.42099,True,,16.02
 New Market,Begumpet,28,17.373486,78.502903,17.437583,78.456945,False,Ameerpet,11.95
 New Market,Bharat Nagar,27,17.373486,78.502903,17.464046,78.430048,True,,13.89
 New Market,Chaitanyapuri,5,17.373486,78.502903,17.368398,78.535855,True,,3.58
@@ -2091,7 +2091,7 @@ New Market,Victoria Memorial,7,17.373486,78.502903,17.361889,78.543962,True,,4.8
 New Market,Yousufguda,30,17.373486,78.502903,17.435081,78.427292,False,Ameerpet,12.18
 Osmania Medical College,Ameerpet,14,17.382358,78.481073,17.435697,78.444603,True,,7.74
 Osmania Medical College,Assembly,4,17.382358,78.481073,17.39813,78.470786,True,,2.43
-Osmania Medical College,Dr. B. R. Ambedkar Balanagar,24,17.382358,78.481073,17.477586,78.42099,True,,13.38
+Osmania Medical College,Balanagar,24,17.382358,78.481073,17.477586,78.42099,True,,13.38
 Osmania Medical College,Begumpet,22,17.382358,78.481073,17.437583,78.456945,False,Ameerpet,9.31
 Osmania Medical College,Bharat Nagar,21,17.382358,78.481073,17.464046,78.430048,True,,11.25
 Osmania Medical College,Chaitanyapuri,11,17.382358,78.481073,17.368398,78.535855,True,,6.22
@@ -2146,7 +2146,7 @@ Osmania Medical College,Victoria Memorial,13,17.382358,78.481073,17.361889,78.54
 Osmania Medical College,Yousufguda,24,17.382358,78.481073,17.435081,78.427292,False,Ameerpet,9.54
 Paradise,Ameerpet,9,17.443496,78.486186,17.435697,78.444603,True,,5.17
 Paradise,Assembly,24,17.443496,78.486186,17.39813,78.470786,False,Ameerpet,10.48
-Paradise,Dr. B. R. Ambedkar Balanagar,24,17.443496,78.486186,17.477586,78.42099,False,Ameerpet,10.81
+Paradise,Balanagar,24,17.443496,78.486186,17.477586,78.42099,False,Ameerpet,10.81
 Paradise,Begumpet,6,17.443496,78.486186,17.437583,78.456945,True,,3.6
 Paradise,Bharat Nagar,21,17.443496,78.486186,17.464046,78.430048,False,Ameerpet,8.68
 Paradise,Chaitanyapuri,39,17.443496,78.486186,17.368398,78.535855,False,Ameerpet,19.13
@@ -2201,7 +2201,7 @@ Paradise,Victoria Memorial,41,17.443496,78.486186,17.361889,78.543962,False,Amee
 Paradise,Yousufguda,14,17.443496,78.486186,17.435081,78.427292,True,,6.97
 Peddamma Gudi,Ameerpet,11,17.4306,78.408448,17.435697,78.444603,True,,4.84
 Peddamma Gudi,Assembly,26,17.4306,78.408448,17.39813,78.470786,False,Ameerpet,10.15
-Peddamma Gudi,Dr. B. R. Ambedkar Balanagar,26,17.4306,78.408448,17.477586,78.42099,False,Ameerpet,10.48
+Peddamma Gudi,Balanagar,26,17.4306,78.408448,17.477586,78.42099,False,Ameerpet,10.48
 Peddamma Gudi,Begumpet,14,17.4306,78.408448,17.437583,78.456945,True,,6.41
 Peddamma Gudi,Bharat Nagar,23,17.4306,78.408448,17.464046,78.430048,False,Ameerpet,8.35
 Peddamma Gudi,Chaitanyapuri,41,17.4306,78.408448,17.368398,78.535855,False,Ameerpet,18.8
@@ -2256,7 +2256,7 @@ Peddamma Gudi,Victoria Memorial,43,17.4306,78.408448,17.361889,78.543962,False,A
 Peddamma Gudi,Yousufguda,6,17.4306,78.408448,17.435081,78.427292,True,,3.04
 Prakash Nagar,Ameerpet,5,17.445126,78.465903,17.435697,78.444603,True,,2.99
 Prakash Nagar,Assembly,20,17.445126,78.465903,17.39813,78.470786,False,Ameerpet,8.3
-Prakash Nagar,Dr. B. R. Ambedkar Balanagar,20,17.445126,78.465903,17.477586,78.42099,False,Ameerpet,8.63
+Prakash Nagar,Balanagar,20,17.445126,78.465903,17.477586,78.42099,False,Ameerpet,8.63
 Prakash Nagar,Begumpet,2,17.445126,78.465903,17.437583,78.456945,True,,1.42
 Prakash Nagar,Bharat Nagar,17,17.445126,78.465903,17.464046,78.430048,False,Ameerpet,6.5
 Prakash Nagar,Chaitanyapuri,35,17.445126,78.465903,17.368398,78.535855,False,Ameerpet,16.95
@@ -2311,7 +2311,7 @@ Prakash Nagar,Victoria Memorial,37,17.445126,78.465903,17.361889,78.543962,False
 Prakash Nagar,Yousufguda,10,17.445126,78.465903,17.435081,78.427292,True,,4.79
 Punjagutta,Ameerpet,2,17.428583,78.45115,17.435697,78.444603,True,,1.05
 Punjagutta,Assembly,8,17.428583,78.45115,17.39813,78.470786,True,,4.26
-Punjagutta,Dr. B. R. Ambedkar Balanagar,12,17.428583,78.45115,17.477586,78.42099,True,,6.69
+Punjagutta,Balanagar,12,17.428583,78.45115,17.477586,78.42099,True,,6.69
 Punjagutta,Begumpet,10,17.428583,78.45115,17.437583,78.456945,False,Ameerpet,2.62
 Punjagutta,Bharat Nagar,9,17.428583,78.45115,17.464046,78.430048,True,,4.56
 Punjagutta,Chaitanyapuri,23,17.428583,78.45115,17.368398,78.535855,True,,12.91
@@ -2366,7 +2366,7 @@ Punjagutta,Victoria Memorial,25,17.428583,78.45115,17.361889,78.543962,True,,14.
 Punjagutta,Yousufguda,12,17.428583,78.45115,17.435081,78.427292,False,Ameerpet,2.85
 RTC Cross Roads,Ameerpet,29,17.407119,78.496553,17.435697,78.444603,False,JBS Parade Ground,12.15
 RTC Cross Roads,Assembly,19,17.407119,78.496553,17.39813,78.470786,False,Mahatma Gandhi Bus Station,6.84
-RTC Cross Roads,Dr. B. R. Ambedkar Balanagar,39,17.407119,78.496553,17.477586,78.42099,False,Mahatma Gandhi Bus Station,17.79
+RTC Cross Roads,Balanagar,39,17.407119,78.496553,17.477586,78.42099,False,Mahatma Gandhi Bus Station,17.79
 RTC Cross Roads,Begumpet,20,17.407119,78.496553,17.437583,78.456945,False,JBS Parade Ground,9.45
 RTC Cross Roads,Bharat Nagar,36,17.407119,78.496553,17.464046,78.430048,False,Mahatma Gandhi Bus Station,15.66
 RTC Cross Roads,Chaitanyapuri,22,17.407119,78.496553,17.368398,78.535855,False,Mahatma Gandhi Bus Station,9.39
@@ -2421,7 +2421,7 @@ RTC Cross Roads,Victoria Memorial,24,17.407119,78.496553,17.361889,78.543962,Fal
 RTC Cross Roads,Yousufguda,28,17.407119,78.496553,17.435081,78.427292,False,JBS Parade Ground,12.82
 Raidurg,Ameerpet,21,17.442274,78.377094,17.435697,78.444603,True,,9.91
 Raidurg,Assembly,36,17.442274,78.377094,17.39813,78.470786,False,Ameerpet,15.22
-Raidurg,Dr. B. R. Ambedkar Balanagar,36,17.442274,78.377094,17.477586,78.42099,False,Ameerpet,15.55
+Raidurg,Balanagar,36,17.442274,78.377094,17.477586,78.42099,False,Ameerpet,15.55
 Raidurg,Begumpet,24,17.442274,78.377094,17.437583,78.456945,True,,11.48
 Raidurg,Bharat Nagar,33,17.442274,78.377094,17.464046,78.430048,False,Ameerpet,13.42
 Raidurg,Chaitanyapuri,51,17.442274,78.377094,17.368398,78.535855,False,Ameerpet,23.87
@@ -2476,7 +2476,7 @@ Raidurg,Victoria Memorial,53,17.442274,78.377094,17.361889,78.543962,False,Ameer
 Raidurg,Yousufguda,16,17.442274,78.377094,17.435081,78.427292,True,,8.11
 Rasoolpura,Ameerpet,7,17.443606,78.476363,17.435697,78.444603,True,,4.13
 Rasoolpura,Assembly,22,17.443606,78.476363,17.39813,78.470786,False,Ameerpet,9.44
-Rasoolpura,Dr. B. R. Ambedkar Balanagar,22,17.443606,78.476363,17.477586,78.42099,False,Ameerpet,9.77
+Rasoolpura,Balanagar,22,17.443606,78.476363,17.477586,78.42099,False,Ameerpet,9.77
 Rasoolpura,Begumpet,4,17.443606,78.476363,17.437583,78.456945,True,,2.56
 Rasoolpura,Bharat Nagar,19,17.443606,78.476363,17.464046,78.430048,False,Ameerpet,7.64
 Rasoolpura,Chaitanyapuri,37,17.443606,78.476363,17.368398,78.535855,False,Ameerpet,18.09
@@ -2531,7 +2531,7 @@ Rasoolpura,Victoria Memorial,39,17.443606,78.476363,17.361889,78.543962,False,Am
 Rasoolpura,Yousufguda,12,17.443606,78.476363,17.435081,78.427292,True,,5.93
 Road No. 5 Jubilee Hills,Ameerpet,7,17.430088,78.422995,17.435697,78.444603,True,,2.65
 Road No. 5 Jubilee Hills,Assembly,22,17.430088,78.422995,17.39813,78.470786,False,Ameerpet,7.96
-Road No. 5 Jubilee Hills,Dr. B. R. Ambedkar Balanagar,22,17.430088,78.422995,17.477586,78.42099,False,Ameerpet,8.29
+Road No. 5 Jubilee Hills,Balanagar,22,17.430088,78.422995,17.477586,78.42099,False,Ameerpet,8.29
 Road No. 5 Jubilee Hills,Begumpet,10,17.430088,78.422995,17.437583,78.456945,True,,4.22
 Road No. 5 Jubilee Hills,Bharat Nagar,19,17.430088,78.422995,17.464046,78.430048,False,Ameerpet,6.16
 Road No. 5 Jubilee Hills,Chaitanyapuri,37,17.430088,78.422995,17.368398,78.535855,False,Ameerpet,16.61
@@ -2586,7 +2586,7 @@ Road No. 5 Jubilee Hills,Victoria Memorial,39,17.430088,78.422995,17.361889,78.5
 Road No. 5 Jubilee Hills,Yousufguda,2,17.430088,78.422995,17.435081,78.427292,True,,0.85
 S R Nagar,Ameerpet,2,17.441659,78.441634,17.435697,78.444603,True,,0.74
 S R Nagar,Assembly,12,17.441659,78.441634,17.39813,78.470786,True,,6.05
-S R Nagar,Dr. B. R. Ambedkar Balanagar,8,17.441659,78.441634,17.477586,78.42099,True,,4.9
+S R Nagar,Balanagar,8,17.441659,78.441634,17.477586,78.42099,True,,4.9
 S R Nagar,Begumpet,10,17.441659,78.441634,17.437583,78.456945,False,Ameerpet,2.31
 S R Nagar,Bharat Nagar,5,17.441659,78.441634,17.464046,78.430048,True,,2.77
 S R Nagar,Chaitanyapuri,27,17.441659,78.441634,17.368398,78.535855,True,,14.7
@@ -2641,7 +2641,7 @@ S R Nagar,Victoria Memorial,29,17.441659,78.441634,17.361889,78.543962,True,,15.
 S R Nagar,Yousufguda,12,17.441659,78.441634,17.435081,78.427292,False,Ameerpet,2.54
 Secunderabad East,Ameerpet,13,17.435789,78.505431,17.435697,78.444603,True,,8.25
 Secunderabad East,Assembly,28,17.435789,78.505431,17.39813,78.470786,False,Ameerpet,13.56
-Secunderabad East,Dr. B. R. Ambedkar Balanagar,28,17.435789,78.505431,17.477586,78.42099,False,Ameerpet,13.89
+Secunderabad East,Balanagar,28,17.435789,78.505431,17.477586,78.42099,False,Ameerpet,13.89
 Secunderabad East,Begumpet,10,17.435789,78.505431,17.437583,78.456945,True,,6.68
 Secunderabad East,Bharat Nagar,25,17.435789,78.505431,17.464046,78.430048,False,Ameerpet,11.76
 Secunderabad East,Chaitanyapuri,43,17.435789,78.505431,17.368398,78.535855,False,Ameerpet,22.21
@@ -2696,7 +2696,7 @@ Secunderabad East,Victoria Memorial,45,17.435789,78.505431,17.361889,78.543962,F
 Secunderabad East,Yousufguda,18,17.435789,78.505431,17.435081,78.427292,True,,10.05
 Secunderabad West,Ameerpet,34,17.433718,78.499194,17.435697,78.444603,False,JBS Parade Ground,15.48
 Secunderabad West,Assembly,24,17.433718,78.499194,17.39813,78.470786,False,Mahatma Gandhi Bus Station,10.17
-Secunderabad West,Dr. B. R. Ambedkar Balanagar,44,17.433718,78.499194,17.477586,78.42099,False,Mahatma Gandhi Bus Station,21.12
+Secunderabad West,Balanagar,44,17.433718,78.499194,17.477586,78.42099,False,Mahatma Gandhi Bus Station,21.12
 Secunderabad West,Begumpet,15,17.433718,78.499194,17.437583,78.456945,False,JBS Parade Ground,6.12
 Secunderabad West,Bharat Nagar,41,17.433718,78.499194,17.464046,78.430048,False,Mahatma Gandhi Bus Station,18.99
 Secunderabad West,Chaitanyapuri,27,17.433718,78.499194,17.368398,78.535855,False,Mahatma Gandhi Bus Station,12.72
@@ -2751,7 +2751,7 @@ Secunderabad West,Victoria Memorial,29,17.433718,78.499194,17.361889,78.543962,F
 Secunderabad West,Yousufguda,23,17.433718,78.499194,17.435081,78.427292,False,JBS Parade Ground,9.49
 Stadium,Ameerpet,24,17.408538,78.553504,17.435697,78.444603,True,,14.98
 Stadium,Assembly,39,17.408538,78.553504,17.39813,78.470786,False,Ameerpet,20.29
-Stadium,Dr. B. R. Ambedkar Balanagar,39,17.408538,78.553504,17.477586,78.42099,False,Ameerpet,20.62
+Stadium,Balanagar,39,17.408538,78.553504,17.477586,78.42099,False,Ameerpet,20.62
 Stadium,Begumpet,21,17.408538,78.553504,17.437583,78.456945,True,,13.41
 Stadium,Bharat Nagar,36,17.408538,78.553504,17.464046,78.430048,False,Ameerpet,18.49
 Stadium,Chaitanyapuri,54,17.408538,78.553504,17.368398,78.535855,False,Ameerpet,28.94
@@ -2806,7 +2806,7 @@ Stadium,Victoria Memorial,56,17.408538,78.553504,17.361889,78.543962,False,Ameer
 Stadium,Yousufguda,29,17.408538,78.553504,17.435081,78.427292,True,,16.78
 Sultan Bazaar,Ameerpet,23,17.384134,78.483697,17.435697,78.444603,False,Mahatma Gandhi Bus Station,9.09
 Sultan Bazaar,Assembly,13,17.384134,78.483697,17.39813,78.470786,False,Mahatma Gandhi Bus Station,3.78
-Sultan Bazaar,Dr. B. R. Ambedkar Balanagar,33,17.384134,78.483697,17.477586,78.42099,False,Mahatma Gandhi Bus Station,14.73
+Sultan Bazaar,Balanagar,33,17.384134,78.483697,17.477586,78.42099,False,Mahatma Gandhi Bus Station,14.73
 Sultan Bazaar,Begumpet,26,17.384134,78.483697,17.437583,78.456945,False,JBS Parade Ground,12.51
 Sultan Bazaar,Bharat Nagar,30,17.384134,78.483697,17.464046,78.430048,False,Mahatma Gandhi Bus Station,12.6
 Sultan Bazaar,Chaitanyapuri,16,17.384134,78.483697,17.368398,78.535855,False,Mahatma Gandhi Bus Station,6.33
@@ -2861,7 +2861,7 @@ Sultan Bazaar,Victoria Memorial,18,17.384134,78.483697,17.361889,78.543962,False
 Sultan Bazaar,Yousufguda,34,17.384134,78.483697,17.435081,78.427292,False,JBS Parade Ground,15.88
 Tarnaka,Ameerpet,18,17.428297,78.52856,17.435697,78.444603,True,,11.05
 Tarnaka,Assembly,33,17.428297,78.52856,17.39813,78.470786,False,Ameerpet,16.36
-Tarnaka,Dr. B. R. Ambedkar Balanagar,33,17.428297,78.52856,17.477586,78.42099,False,Ameerpet,16.69
+Tarnaka,Balanagar,33,17.428297,78.52856,17.477586,78.42099,False,Ameerpet,16.69
 Tarnaka,Begumpet,15,17.428297,78.52856,17.437583,78.456945,True,,9.48
 Tarnaka,Bharat Nagar,30,17.428297,78.52856,17.464046,78.430048,False,Ameerpet,14.56
 Tarnaka,Chaitanyapuri,48,17.428297,78.52856,17.368398,78.535855,False,Ameerpet,25.01
@@ -2916,7 +2916,7 @@ Tarnaka,Victoria Memorial,50,17.428297,78.52856,17.361889,78.543962,False,Ameerp
 Tarnaka,Yousufguda,23,17.428297,78.52856,17.435081,78.427292,True,,12.85
 Uppal,Ameerpet,25,17.400078,78.560251,17.435697,78.444603,True,,16.06
 Uppal,Assembly,40,17.400078,78.560251,17.39813,78.470786,False,Ameerpet,21.37
-Uppal,Dr. B. R. Ambedkar Balanagar,40,17.400078,78.560251,17.477586,78.42099,False,Ameerpet,21.7
+Uppal,Balanagar,40,17.400078,78.560251,17.477586,78.42099,False,Ameerpet,21.7
 Uppal,Begumpet,22,17.400078,78.560251,17.437583,78.456945,True,,14.49
 Uppal,Bharat Nagar,37,17.400078,78.560251,17.464046,78.430048,False,Ameerpet,19.57
 Uppal,Chaitanyapuri,55,17.400078,78.560251,17.368398,78.535855,False,Ameerpet,30.02
@@ -2971,7 +2971,7 @@ Uppal,Victoria Memorial,57,17.400078,78.560251,17.361889,78.543962,False,Ameerpe
 Uppal,Yousufguda,30,17.400078,78.560251,17.435081,78.427292,True,,17.86
 Victoria Memorial,Ameerpet,27,17.361889,78.543962,17.435697,78.444603,True,,15.19
 Victoria Memorial,Assembly,17,17.361889,78.543962,17.39813,78.470786,True,,9.88
-Victoria Memorial,Dr. B. R. Ambedkar Balanagar,37,17.361889,78.543962,17.477586,78.42099,True,,20.83
+Victoria Memorial,Balanagar,37,17.361889,78.543962,17.477586,78.42099,True,,20.83
 Victoria Memorial,Begumpet,35,17.361889,78.543962,17.437583,78.456945,False,Ameerpet,16.76
 Victoria Memorial,Bharat Nagar,34,17.361889,78.543962,17.464046,78.430048,True,,18.7
 Victoria Memorial,Chaitanyapuri,2,17.361889,78.543962,17.368398,78.535855,True,,1.23
@@ -3026,7 +3026,7 @@ Victoria Memorial,Uppal,57,17.361889,78.543962,17.400078,78.560251,False,Ameerpe
 Victoria Memorial,Yousufguda,37,17.361889,78.543962,17.435081,78.427292,False,Ameerpet,16.99
 Yousufguda,Ameerpet,5,17.435081,78.427292,17.435697,78.444603,True,,1.8
 Yousufguda,Assembly,20,17.435081,78.427292,17.39813,78.470786,False,Ameerpet,7.11
-Yousufguda,Dr. B. R. Ambedkar Balanagar,20,17.435081,78.427292,17.477586,78.42099,False,Ameerpet,7.44
+Yousufguda,Balanagar,20,17.435081,78.427292,17.477586,78.42099,False,Ameerpet,7.44
 Yousufguda,Begumpet,8,17.435081,78.427292,17.437583,78.456945,True,,3.37
 Yousufguda,Bharat Nagar,17,17.435081,78.427292,17.464046,78.430048,False,Ameerpet,5.31
 Yousufguda,Chaitanyapuri,35,17.435081,78.427292,17.368398,78.535855,False,Ameerpet,15.76
